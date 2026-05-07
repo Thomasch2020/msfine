@@ -1,0 +1,85 @@
+Applied changes:
+- Hero statement updated.
+- Overview text changed to Ueber/Über in app/page.js.
+- Save-the-date background image moved to a deeper pseudo-element layer in app/globals.css.
+- Implementation/Realisierung wording updated.
+- Community/About wording updated.
+
+V10:
+- Community-Text zu Zukunftgestalter:innen geändert.
+- About-Headline gekürzt auf "The Makers Stage verbindet die Schweizer Immobilienbranche -".
+- Abschnitt darunter in neuen Absatz "durch die Kraft ..." plus Zielabsatz getrennt.
+2026-04-29 v11:
+- Intro-Satz um „reale und technologiegetriebene Innovationen“ erweitert.
+- Bindestrich am Ende des About-Schriftzugs entfernt.
+- Absatz auf „über technologiegetriebene Innovation“ angepasst.
+
+
+Version v13:
+- Strategie-Text aktualisiert.
+- Format-Kicker oberhalb der beiden Format-Rahmen eingefuegt.
+
+
+Version v14:
+- Save-the-Date-Bild als Hintergrundebene hinter die Karte gesetzt.
+- Letzte Footer-Karte mit GitHub/Vercel-Text und makerstage.ch-Button entfernt.
+- Footer durch Copyright und Links zu Impressum und Datenschutzerklärung ersetzt.
+- Seiten /impressum und /datenschutzerklaerung ergänzt.
+
+v15 changes:
+- Updated hero lead ending to "und gemeinsam Zukunft erfolgreich in Unternehmen und in den Markt einzubringen."
+- Moved Save the Date image from the card wrapper to the full Save the Date section background.
+- Removed Partner intro headline and explanatory paragraph.
+- Removed the "Partnerschaften" kicker above partner models.
+- Styled "Vier Modelle, um makerstage mitzugestalten." with overview-title typography.
+- Changed the bronze price label to "Netzwerk Partner".
+
+V15 changes:
+- Updated hero lead to "in Unternehmen und in den Markt einzubringen."
+- Save the Date image is now the section-level background.
+- Removed partner intro title/body text and the "Partnerschaften" label.
+- Styled "Vier Modelle, um makerstage mitzugestalten." with overview title styling.
+- Changed the bronze price label to "Netzwerk Partner".
+
+
+v16:
+- Save-the-Date-Abschnitt mit fixed/parallaxartigem Hintergrundbild umgesetzt.
+- Mission/Strategie und Textabschnitte gemäss Feedback angepasst.
+- Format-Beschreibungstexte entfernt.
+- Save-the-Date-Infokarte mit Rückblick-Link aktualisiert.
+
+V17: Partnerbereich auf icccon.ch, burkhardtgroup.com, allthings.me, swiss-securitas.com, bauklar.ai und re-x.ch umgestellt; Logokarten und SVGs transparent gesetzt.
+
+
+v18 changes:
+- Partner label set to PARTNER and logo cards restored to glass background.
+- Partner logos configured with grayscale remote logo sources and local fallbacks.
+- Rückblick link updated.
+- Initiator/quote section now uses uploaded image as background with fixed-scroll treatment.
+
+V19 changes:
+- Initiator label set to blue uppercase INITIATOR.
+- Initiator copy and quote section updated.
+
+
+v20:
+- Hero-Text um 'die Zukunft' ergänzt.
+- About-Absatz mit blauen Hervorhebungen und Zeilenumbruch ergänzt.
+- Save-the-Date-Infotext ersetzt und FIRST STAGE · NEXT TO IMMO27 blau gesetzt.
+- Partnerlogos auf lokale SVG-Dateien umgestellt, damit kein Dokumenten-/Broken-Image-Icon erscheint.
+
+v22 Design polish:
+- Header als schwebende Glas-Navigation gestaltet.
+- Hero-Typografie, Overlays, Button-Styling und Quick-Cards verfeinert.
+- Karten, Partnerbereich, Partner-Modelle, Save-the-Date und Initiator-Abschnitt mit konsistenteren Glassmorphism-, Schatten- und Hover-Zuständen professionalisiert.
+- Formular, Footer und Legal-Seiten optisch an das neue System angepasst.
+- Metadata-Beschreibung aktualisiert.
+
+
+v24:
+- Textkorrekturen in Vision, Strategie, About und Save-the-Date umgesetzt.
+- Anmeldung-Link mit eigener Anmeldemaske ergänzt.
+- Registrierung sendet an thomas.kral@icccon.ch über /api/registration.
+- Bronzekarte aktualisiert, Rhodium-Karte ergänzt.
+- Partnermodelle auf kleinen Screens horizontal scrollbar gemacht.
+- Partner-URL-Karten ohne Umbruch verbreitert.

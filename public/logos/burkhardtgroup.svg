@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-labelledby="title desc">
+  <title id="title">burkhardtgroup.com</title>
+  <desc id="desc">Transparent wordmark for burkhardtgroup.com</desc>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M36 34h26c18 0 29 9 29 24 0 17-12 28-31 28H36V34Z" stroke="#82d0ff" stroke-width="5"/>
+    <path d="M51 49h9c8 0 13 4 13 10 0 7-5 11-13 11h-9V49Z" fill="#1197ff"/>
+    <text x="112" y="70" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="38" font-weight="740" letter-spacing="-1.2">burkhardtgroup</text>
+    <text x="418" y="70" fill="#82d0ff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="38" font-weight="740" letter-spacing="-1.2">.com</text>
+  </g>
+</svg>

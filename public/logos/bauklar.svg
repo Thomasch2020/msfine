@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title desc">
+  <title id="title">bauklar.ai</title>
+  <desc id="desc">Transparent wordmark for bauklar.ai</desc>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M33 75 58 32l25 43H33Z" stroke="#82d0ff" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M50 64h16" stroke="#1197ff" stroke-width="5" stroke-linecap="round"/>
+    <text x="101" y="70" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="45" font-weight="760" letter-spacing="-1.2">bauklar</text>
+    <text x="270" y="70" fill="#82d0ff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="45" font-weight="760" letter-spacing="-1.2">.ai</text>
+  </g>
+</svg>

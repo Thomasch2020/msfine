@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title desc">
+  <title id="title">allthings.me</title>
+  <desc id="desc">Transparent wordmark for allthings.me</desc>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="39" cy="48" r="8" fill="#82d0ff"/>
+    <circle cx="62" cy="48" r="8" fill="#1197ff"/>
+    <circle cx="51" cy="69" r="8" fill="#ffffff" fill-opacity=".9"/>
+    <path d="M39 48l12 21 11-21" stroke="#82d0ff" stroke-width="3" stroke-linecap="round"/>
+    <text x="88" y="70" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.5">allthings</text>
+    <text x="280" y="70" fill="#82d0ff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.5">.me</text>
+  </g>
+</svg>

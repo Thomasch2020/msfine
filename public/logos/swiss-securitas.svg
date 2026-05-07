@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" role="img" aria-labelledby="title desc">
+  <title id="title">swiss-securitas.com</title>
+  <desc id="desc">Transparent wordmark for swiss-securitas.com</desc>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="53" cy="60" r="28" stroke="#d51f2a" stroke-width="5"/>
+    <path d="M53 37v46M30 60h46" stroke="#d51f2a" stroke-width="5" stroke-linecap="round"/>
+    <text x="102" y="70" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="36" font-weight="760" letter-spacing="-1.1">swiss-securitas</text>
+    <text x="403" y="70" fill="#82d0ff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="36" font-weight="760" letter-spacing="-1.1">.com</text>
+  </g>
+</svg>

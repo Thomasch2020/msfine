@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title desc">
+  <title id="title">re-x.ch</title>
+  <desc id="desc">Transparent wordmark for re-x.ch</desc>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M39 72V42h22c14 0 22 6 22 16s-8 16-22 16H49l35 0" stroke="#82d0ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="102" y="73" fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="50" font-weight="790" letter-spacing="-1.2">re-x</text>
+    <text x="214" y="73" fill="#82d0ff" font-family="Inter, Arial, Helvetica, sans-serif" font-size="50" font-weight="790" letter-spacing="-1.2">.ch</text>
+  </g>
+</svg>
