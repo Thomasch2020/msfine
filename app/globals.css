@@ -351,14 +351,14 @@ main::before {
   padding-left: 18px;
   border-left: 2px solid rgba(130,208,255,0.72);
 }
-.cards.three-col, .cards.four-col, .split-grid, .split-quote, .contact-grid, .registration-grid, .logo-grid {
+.cards.three-col, .cards.four-col, .split-grid, .split-quote, .contact-grid, .logo-grid {
   display: grid;
   gap: 22px;
 }
 .cards.three-col { margin-top: 52px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .format-kicker { margin: 0 0 24px; }
 .tier-scroll { margin-top: 38px; }
-.cards.four-col { margin-top: 0; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cards.four-col { margin-top: 0; grid-template-columns: repeat(5, minmax(210px, 1fr)); }
 .glass-card, .tier-card {
   position: relative;
   overflow: hidden;
@@ -380,6 +380,13 @@ main::before {
   margin: 14px 0 0;
   font-size: clamp(1.8rem, 2.4vw, 2.35rem);
   letter-spacing: -0.04em;
+}
+.tier-card h3 {
+  font-size: clamp(1.42rem, 1.7vw, 1.9rem);
+  line-height: 1.15;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 .feature-card p:last-child { margin-top: 14px; }
 .split-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -598,9 +605,12 @@ main::before {
     radial-gradient(circle at 18% 12%, rgba(17,151,255,0.13), transparent 26rem),
     rgba(255,255,255,0.018);
 }
-.registration-grid {
-  grid-template-columns: 0.9fr 1.1fr;
-  align-items: start;
+.registration-shell {
+  max-width: 980px;
+}
+.registration-copy {
+  max-width: 860px;
+  margin-bottom: 28px;
 }
 .registration-copy h2 {
   margin: 14px 0 0;
@@ -608,28 +618,25 @@ main::before {
   line-height: 1.04;
   letter-spacing: -0.04em;
 }
-.registration-options {
-  margin-top: 24px;
-  padding: 24px;
-  border-radius: 26px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
-  border: 1px solid rgba(255,255,255,0.12);
+.registration-copy p:not(.section-kicker) {
   color: var(--muted);
   line-height: 1.75;
-}
-.registration-options p {
-  margin: 0 0 12px;
-  color: rgba(255,255,255,0.86);
-}
-.registration-options ol {
   margin: 0;
-  padding-left: 1.3rem;
 }
-.registration-options li + li {
-  margin-top: 0.8rem;
+.registration-copy h2 + p {
+  margin-top: 24px;
+  color: rgba(255,255,255,0.88);
+}
+.registration-copy p + p {
+  margin-top: 0.55rem;
 }
 .registration-form {
   align-self: start;
+}
+.registration-note {
+  margin: 12px 0 0;
+  color: rgba(255,255,255,0.52);
+  font-size: 0.84rem;
 }
 .contact-grid { grid-template-columns: 0.9fr 1.1fr; align-items: start; }
 .contact-meta {
@@ -750,12 +757,12 @@ main::before {
     min-width: 100%;
     grid-template-columns: none;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(286px, 34vw);
+    grid-auto-columns: minmax(340px, 38vw);
   }
   .tier-scroll .tier-card {
     scroll-snap-align: start;
   }
-  .contact-grid, .registration-grid, .split-quote, .highlight-panel, .split-grid { grid-template-columns: 1fr; }
+  .contact-grid, .split-quote, .highlight-panel, .split-grid { grid-template-columns: 1fr; }
   .highlight-panel { min-height: auto; }
 }
 
@@ -781,7 +788,7 @@ main::before {
   .hero h1 { font-size: clamp(2.55rem, 15vw, 4.1rem); letter-spacing: -0.058em; }
   .lead { font-size: 1.04rem; line-height: 1.68; }
   .logo-grid { grid-template-columns: 1fr; }
-  .tier-scroll .cards.four-col { grid-auto-columns: minmax(282px, 82vw); }
+  .tier-scroll .cards.four-col { grid-auto-columns: minmax(340px, 88vw); }
   .highlight-panel, .glass-card, .tier-card, .quote-panel, .contact-form, .footer-inner { border-radius: 24px; }
   .highlight-panel { padding: 24px; }
   .footer-inner { padding: 22px; align-items: flex-start; flex-direction: column; }

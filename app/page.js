@@ -145,7 +145,7 @@ function VideoHero() {
           </div>
           <div className="quick-card">
             <div className="quick-title">Community</div>
-            <p>Einzelpersonen, Unternehmen, kurz: Zukunftgestalter:innen.</p>
+            <p>Einzelpersonen, Unternehmen, kurz: Zukunft Gestalter:innen.</p>
           </div>
         </div>
       </div>
@@ -227,7 +227,7 @@ export default function Page() {
           <div className="highlight-panel highlight-panel-image">
               <div>
                 <p className="section-kicker">Save the Date</p>
-                <h2>13. Januar 2026</h2>
+                <h2>13. Januar 2027</h2>
               </div>
               <div className="mini-panel save-date-info">
                 <p className="card-kicker save-date-kicker">FIRST STAGE · NEXT TO IMMO27</p>
@@ -235,7 +235,7 @@ export default function Page() {
                   Zum Jahresauftakt erwartet euch in Zürich Oerlikon ein besonderer Tag: zwei Events an einem Standort - die IMMO27 in der Halle 550 und unsere erste Stage in der Halle 622.
                 </p>
                 <p>
-                  Mit der Stage führen wir den Spirit des IFMA Spotlight 2026 weiter: ein kompakten, inspirierenden Rückblick mit relevanten Impulsen, Austausch und Begegnungen innerhalb der Branche findet ihr hier: <a href="https://www.linkedin.com/posts/thomas-kral-0a428b108_good-morning-fm-das-rockt-mit-einer-vision-activity-7420344554937044993-IzGR?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsX6rwBx7b7bD_R0Bw18Ff1FnVSFQ1_Zms" target="_blank" rel="noreferrer">Rückblick</a>
+                  Mit der Stage führen wir den Spirit des IFMA Spotlight 2026 weiter: ein kompakten, inspirierenden Rückblick mit relevanten Impulsen, Austausch und Begegnungen innerhalb der Branche findet ihr hier: <a href="https://www.youtube.com/watch?v=jSa3bXpuQhg&t=2s" target="_blank" rel="noreferrer">Rückblick</a>
                 </p>
                 <p>
                   Ihr könnt euch bereits heute anmelden: <a href="#registration" className="accent-text">Anmeldung</a>
@@ -246,17 +246,13 @@ export default function Page() {
       </section>
 
       <section id="registration" className="section registration-section">
-        <div className="container registration-grid">
+        <div className="container registration-shell">
           <div className="registration-copy">
-            <p className="section-kicker">Anmeldung</p>
+            <p className="section-kicker">ANMELDUNG</p>
             <h2>Zur Stage anmelden.</h2>
-            <div className="registration-options">
-              <p>Du hast folgende Optionen dich zur Stage anzumelden:</p>
-              <ol>
-                <li>Wenn Du keine maker:in bist kostet Dich die Stage CHF 150.</li>
-                <li>Bist Du maker:in oder hat deine Fima einen Partnerstatus hast Du freien Eintritt insofern das Kontingent nicht aufgebraucht ist.</li>
-              </ol>
-            </div>
+            <p>Du hast folgende Optionen dich zur Stage anzumelden:</p>
+            <p>Wenn Du keine maker:in bist kostet Dich die Stage CHF 150.</p>
+            <p>Bist Du maker:in oder hat deine Fima einen Partnerstatus hast Du freien Eintritt insofern das Kontingent nicht aufgebraucht ist.</p>
           </div>
 
           <form className="contact-form registration-form" method="post" action="/api/registration">
@@ -269,24 +265,26 @@ export default function Page() {
               <input type="text" name="lastName" placeholder="Nachname" required />
             </label>
             <label>
-              <span>Unternehmen</span>
+              <span>Unternehmen*</span>
               <input type="text" name="company" placeholder="Firma / Organisation" />
             </label>
             <label>
               <span>E-Mail</span>
-              <input type="email" name="email" placeholder="name@firma.ch" required />
+              <input type="email" name="email" placeholder="name@provider.ch" required />
             </label>
             <label>
-              <span>Telefon</span>
+              <span>Telefon*</span>
               <input type="tel" name="phone" placeholder="+41 ..." />
             </label>
             <label>
               <span>Teilnahmestatus</span>
-              <select name="status" defaultValue="Keine maker:in / kein Partnerstatus">
-                <option>Keine maker:in / kein Partnerstatus</option>
-                <option>maker:in</option>
-                <option>Partnerunternehmen</option>
-                <option>Bitte Status prüfen</option>
+              <select name="status" defaultValue="Kein:e Maker:in / Partner:in">
+                <option>Kein:e Maker:in / Partner:in</option>
+                <option>Bronze Partner:in</option>
+                <option>Silber Partner:in</option>
+                <option>Gold Partner:in</option>
+                <option>Platin Partner:in</option>
+                <option>Rhodium Partner:in</option>
               </select>
             </label>
             <label className="full">
@@ -295,6 +293,7 @@ export default function Page() {
             </label>
             <button type="submit" className="button button-primary">Anmeldung senden</button>
           </form>
+          <p className="registration-note">*Optional</p>
         </div>
       </section>
 
