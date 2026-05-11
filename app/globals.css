@@ -657,7 +657,7 @@ main::before {
     rgba(255,255,255,0.018);
 }
 .registration-shell {
-  max-width: 980px;
+  max-width: var(--max);
 }
 .registration-copy {
   max-width: 860px;
