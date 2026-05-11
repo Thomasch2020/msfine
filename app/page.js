@@ -9,7 +9,7 @@ const pillars = [
   },
   {
     title: 'Mission',
-    text: 'Wir vernetzen alle Akteure rund um Immobilien und schaffen eine lebendige Plattform für Innovation, Austausch und Zusammenarbeit. Die Digitalisierung und Nachhaltigkeit sind dabei die Basis auf die wir bauen.',
+    text: 'Wir vernetzen alle Akteure rund um Immobilien und schaffen eine lebendige Plattform für Innovation, Austausch und Zusammenarbeit. Die Digitalisierung und Nachhaltigkeit sind dabei die Basis, auf die wir bauen.',
   },
   {
     title: 'Strategie',
@@ -19,8 +19,19 @@ const pillars = [
 
 const partnerTiers = [
   {
+    name: 'Community',
+    price: 'Maker:in (Netzwerk)',
+    items: [
+      'Recht: Exklusive News von makerstage',
+      'Recht: Gratis Eintritte zur Stage',
+      'Pflicht: Kommunikation und Marketing über das eigene Netzwerk',
+      'Pflicht: Verbreitung von Aktionen über eigene Kanäle',
+      'Pflicht: Finanzielle Beteiligung CHF 300/a',
+    ],
+  },
+  {
     name: 'Bronze',
-    price: 'Netzwerk Partner',
+    price: 'Partner:in (Netzwerk)',
     items: [
       'Recht: Nennung auf Stage- und Kommunikationsmassnahmen',
       'Recht: Exklusive News von makerstage',
@@ -32,16 +43,21 @@ const partnerTiers = [
   },
   {
     name: 'Silber',
-    price: 'CHF 5’000 / Jahr',
+    price: 'Partner:in',
     items: [
-      'Alle Bronze-Rechte und -Pflichten',
-      'Beteiligung an der Finanzierung der Plattform',
-      'Halbe A4-Seite Unternehmenswerbung in Publikationen',
+      'Recht: Alle Rechte der Silber Partner:in',
+      'Recht: Halbe A4-Seite Unternehmenswerbung in Publikationen',
+      'Recht: Nennung auf Stage- und Kommunikationsmassnahmen',
+      'Recht: Exklusive News von makerstage',
+      'Recht: Gratis- und reduzierte Eintritte zur Stage',
+      'Pflicht: Kommunikation und Marketing über das eigene Netzwerk',
+      'Pflicht: Verbreitung von Aktionen über eigene Kanäle',
+      'Pflicht: Finanzielle Beteiligung CHF 2500/a',
     ],
   },
   {
     name: 'Gold',
-    price: 'CHF 10’000 / Jahr',
+    price: 'Partner:in',
     featured: true,
     items: [
       'Alle Bronze-Rechte und -Pflichten',
@@ -52,7 +68,7 @@ const partnerTiers = [
   },
   {
     name: 'Platin',
-    price: 'CHF 15’000–20’000 / Jahr',
+    price: 'Partner:in',
     featured: true,
     items: [
       'Alle Bronze-Rechte und -Pflichten',
@@ -64,7 +80,7 @@ const partnerTiers = [
   },
   {
     name: 'Rhodium',
-    price: 'Partner',
+    price: 'Partnerin',
     featured: true,
     items: [
       'Recht: Alle Plation-Rechte und -Pflichten',
@@ -235,7 +251,7 @@ export default function Page() {
                   Zum Jahresauftakt erwartet euch in Zürich Oerlikon ein besonderer Tag: zwei Events an einem Standort - die IMMO27 in der Halle 550 und unsere erste Stage in der Halle 622.
                 </p>
                 <p>
-                  Mit der Stage führen wir den Spirit des IFMA Spotlight 2026 weiter: ein kompakten, inspirierenden Rückblick mit relevanten Impulsen, Austausch und Begegnungen innerhalb der Branche findet ihr hier: <a href="https://www.youtube.com/watch?v=jSa3bXpuQhg&t=2s" target="_blank" rel="noreferrer">Rückblick</a>
+                  Mit der Stage führen wir den Spirit des IFMA-Spotlight 2026 weiter: einen kompakten, inspirierenden Rückblick mit relevanten Impulsen, Austausch und Begegnungen innerhalb der Branche findet ihr hier: <a href="https://www.youtube.com/watch?v=jSa3bXpuQhg&t=2s" target="_blank" rel="noreferrer">Rückblick</a>
                 </p>
                 <p>
                   Ihr könnt euch bereits heute anmelden: <a href="#registration" className="accent-text">Anmeldung</a>
@@ -250,6 +266,7 @@ export default function Page() {
           <div className="registration-copy">
             <p className="section-kicker">ANMELDUNG</p>
             <h2>Zur Stage anmelden.</h2>
+            <div className="registration-copy-spacer" aria-hidden="true" />
             <p>Du hast folgende Optionen dich zur Stage anzumelden:</p>
             <p>Wenn Du keine maker:in bist kostet Dich die Stage CHF 150.</p>
             <p>Bist Du maker:in oder hat deine Fima einen Partnerstatus hast Du freien Eintritt insofern das Kontingent nicht aufgebraucht ist.</p>
@@ -278,8 +295,9 @@ export default function Page() {
             </label>
             <label>
               <span>Teilnahmestatus</span>
-              <select name="status" defaultValue="Kein:e Maker:in / Partner:in">
-                <option>Kein:e Maker:in / Partner:in</option>
+              <select name="status" defaultValue="Keine Maker:in / Partner:in">
+                <option>Keine Maker:in / Partner:in</option>
+                <option>Maker:in</option>
                 <option>Bronze Partner:in</option>
                 <option>Silber Partner:in</option>
                 <option>Gold Partner:in</option>
@@ -359,7 +377,7 @@ export default function Page() {
       <section id="contact" className="section alt-section">
         <div className="container contact-grid">
           <div className="contact-copy">
-            <p className="section-kicker">Kontakt</p>
+            <p className="section-kicker">KONTAKT</p>
             <h2>Lass uns makerstage gemeinsam aufbauen.</h2>
             <p>
               Nutze die Kontaktmöglichkeiten und sprich uns mit Deinen Anliegen an egal was Dir zum Thema makerstage auf dem Herzen liegt.
@@ -369,28 +387,33 @@ export default function Page() {
                 <strong>E-Mail</strong>
                 <span>thomas.kral@icccon.ch</span>
               </div>
+              <div>
+                <strong>Telefon</strong>
+                <span>+41 78 833 94 25</span>
+              </div>
             </div>
           </div>
 
-          <form className="contact-form" method="post" action="/api/contact">
+          <div className="form-stack">
+            <form className="contact-form" method="post" action="/api/contact">
             <label>
               <span>Name</span>
               <input type="text" name="name" placeholder="Vorname Nachname" required />
             </label>
             <label>
-              <span>Unternehmen</span>
+              <span>Unternehmen*</span>
               <input type="text" name="company" placeholder="Firma / Organisation" />
             </label>
             <label>
               <span>E-Mail</span>
-              <input type="email" name="email" placeholder="name@firma.ch" required />
+              <input type="email" name="email" placeholder="name@provider.ch" required />
             </label>
             <label>
               <span>Interesse</span>
-              <select name="interest" defaultValue="Partnerschaft">
-                <option>Partnerschaft</option>
-                <option>Speaker</option>
-                <option>Allgemeine Anfrage</option>
+              <select name="interest" defaultValue="Maker:in">
+                <option>Maker:in</option>
+                <option>Partner:in</option>
+                <option>Sonstiges</option>
               </select>
             </label>
             <label className="full">
@@ -398,7 +421,9 @@ export default function Page() {
               <textarea name="message" rows="6" placeholder="Wie möchtest du makerstage unterstützen oder mitgestalten?" required />
             </label>
             <button type="submit" className="button button-primary">Anfrage senden</button>
-          </form>
+            </form>
+            <p className="form-note contact-optional-note">*Optional</p>
+          </div>
         </div>
       </section>
 

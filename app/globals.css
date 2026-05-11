@@ -327,6 +327,11 @@ main::before {
   color: var(--muted);
   line-height: 1.8;
 }
+.section-head .section-kicker,
+.feature-card .section-kicker,
+.contact-copy .section-kicker {
+  color: var(--blue-soft);
+}
 .section-copy {
   margin-top: 2.35rem;
   max-width: 840px;
@@ -357,8 +362,8 @@ main::before {
 }
 .cards.three-col { margin-top: 52px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .format-kicker { margin: 0 0 24px; }
-.tier-scroll { margin-top: 38px; }
-.cards.four-col { margin-top: 0; grid-template-columns: repeat(5, minmax(210px, 1fr)); }
+.tier-scroll { margin-top: 38px; overflow-x: auto; padding-bottom: 12px; -webkit-overflow-scrolling: touch; }
+.cards.four-col { margin-top: 0; grid-template-columns: repeat(6, minmax(205px, 1fr)); }
 .glass-card, .tier-card {
   position: relative;
   overflow: hidden;
@@ -564,7 +569,7 @@ main::before {
 }
 .quote-panel blockquote {
   margin: 0;
-  font-size: clamp(1.22rem, 2.1vw, 1.92rem);
+  font-size: clamp(1.35rem, 2.4vw, 2.25rem);
   line-height: 1.42;
   letter-spacing: -0.04em;
   color: rgba(255,255,255,0.96);
@@ -626,6 +631,17 @@ main::before {
 .registration-copy h2 + p {
   margin-top: 24px;
   color: rgba(255,255,255,0.88);
+}
+
+.registration-copy-spacer {
+  height: 1rem;
+}
+.form-stack {
+  display: grid;
+  gap: 12px;
+}
+.contact-optional-note {
+  margin: 0 0 0 2px;
 }
 .registration-copy p + p {
   margin-top: 0.55rem;
