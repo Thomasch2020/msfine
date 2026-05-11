@@ -362,8 +362,47 @@ main::before {
 }
 .cards.three-col { margin-top: 52px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .format-kicker { margin: 0 0 24px; }
-.tier-scroll { margin-top: 38px; overflow-x: auto; padding-bottom: 12px; -webkit-overflow-scrolling: touch; }
-.cards.four-col { margin-top: 0; grid-template-columns: repeat(6, minmax(205px, 1fr)); }
+/* Hochwertiger horizontaler Scrollbereich für die Partnerkarten */
+.tier-scroll {
+  position: relative;
+  margin-top: 38px;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 6px 2px 24px;
+  margin-left: -2px;
+  margin-right: -2px;
+  scroll-snap-type: x proximity;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(130,208,255,0.82) rgba(255,255,255,0.08);
+  -webkit-overflow-scrolling: touch;
+}
+.tier-scroll::-webkit-scrollbar {
+  height: 13px;
+}
+.tier-scroll::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.07), rgba(255,255,255,0.035));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+.tier-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 3px solid rgba(2,6,12,0.88);
+  background: linear-gradient(90deg, var(--blue), var(--blue-soft));
+  box-shadow: 0 0 18px rgba(17,151,255,0.32);
+}
+.tier-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, var(--blue-soft), var(--blue));
+}
+.cards.four-col {
+  margin-top: 0;
+  width: max-content;
+  min-width: 100%;
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(390px, 430px);
+  align-items: stretch;
+}
 .glass-card, .tier-card {
   position: relative;
   overflow: hidden;
@@ -387,11 +426,14 @@ main::before {
   letter-spacing: -0.04em;
 }
 .tier-card h3 {
-  font-size: clamp(1.42rem, 1.7vw, 1.9rem);
-  line-height: 1.15;
-  overflow-wrap: normal;
+  max-width: 100%;
+  font-size: clamp(1.35rem, 1.55vw, 1.75rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  white-space: normal;
+  overflow-wrap: break-word;
   word-break: normal;
-  hyphens: none;
+  hyphens: auto;
 }
 .feature-card p:last-child { margin-top: 14px; }
 .split-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -593,6 +635,10 @@ main::before {
 .tier-card li {
   position: relative;
   padding-left: 20px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
 }
 .tier-card li::before {
   content: '';
@@ -759,21 +805,8 @@ main::before {
 
 @media (max-width: 1100px) {
   .logo-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-  .tier-scroll {
-    overflow-x: auto;
-    overflow-y: visible;
-    padding: 4px 2px 18px;
-    margin-left: -2px;
-    margin-right: -2px;
-    scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
-  }
   .tier-scroll .cards.four-col {
-    width: max-content;
-    min-width: 100%;
-    grid-template-columns: none;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(340px, 38vw);
+    grid-auto-columns: minmax(370px, 42vw);
   }
   .tier-scroll .tier-card {
     scroll-snap-align: start;
@@ -804,7 +837,7 @@ main::before {
   .hero h1 { font-size: clamp(2.55rem, 15vw, 4.1rem); letter-spacing: -0.058em; }
   .lead { font-size: 1.04rem; line-height: 1.68; }
   .logo-grid { grid-template-columns: 1fr; }
-  .tier-scroll .cards.four-col { grid-auto-columns: minmax(340px, 88vw); }
+  .tier-scroll .cards.four-col { grid-auto-columns: minmax(320px, calc(100vw - 56px)); }
   .highlight-panel, .glass-card, .tier-card, .quote-panel, .contact-form, .footer-inner { border-radius: 24px; }
   .highlight-panel { padding: 24px; }
   .footer-inner { padding: 22px; align-items: flex-start; flex-direction: column; }

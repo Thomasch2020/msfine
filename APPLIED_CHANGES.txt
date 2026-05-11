@@ -91,3 +91,9 @@ v28:
 - Silber card updated to Partner:in with revised rights and CHF 2500/a duty.
 - Gold, Platin and Rhodium partner labels updated.
 - Previous registration/contact text updates retained.
+
+
+v29:
+- Partnerkarten breiter und durchgehend horizontal scrollbar umgesetzt.
+- Scrollbar der Partnerkarten optisch hochwertiger gestaltet.
+- Textumbruch in Partnerkarten verbessert, damit Inhalte nicht rechts abgeschnitten werden.
