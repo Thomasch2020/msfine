@@ -19,78 +19,75 @@ const pillars = [
 
 const partnerTiers = [
   {
-    name: 'Community',
-    price: 'Maker:in (Netzwerk)',
-    items: [
-      'Recht: Exklusive News von makerstage',
-      'Recht: Gratis Eintritte zur Stage',
-      'Pflicht: Kommunikation und Marketing über das eigene Netzwerk',
-      'Pflicht: Verbreitung von Aktionen über eigene Kanäle',
-      'Pflicht: Finanzielle Beteiligung CHF 300/a',
-    ],
+    "name": "INDIVIDUEL",
+    "price": "Maker:in (Netzwerk)",
+    "items": [
+      "Recht: Exklusive News von makerstage (aus der ganzen Welt zu greifbaren technologiegetriebenen Innovationen)",
+      "Recht: Gratis Eintritte zur Stage",
+      "Pflicht: Kommunikation und Marketing über das eigene Netzwerk",
+      "Pflicht: Verbreitung von Aktionen über eigene Kanäle",
+      "Pflicht: Finanzielle Beteiligung CHF 300/a"
+    ]
   },
   {
-    name: 'Bronze',
-    price: 'Partner:in (Netzwerk)',
-    items: [
-      'Recht: Nennung auf Stage- und Kommunikationsmassnahmen',
-      'Recht: Exklusive News von makerstage',
-      'Recht: Gratis- und reduzierte Eintritte zur Stage',
-      'Pflicht: Kommunikation und Marketing über das eigene Netzwerk',
-      'Pflicht: Verbreitung von Aktionen über eigene Kanäle',
-      'Pflicht: Finanzielle Beteiligung CHF 1000/a',
-    ],
+    "name": "BRONZE",
+    "price": "Partner:in (Netzwerk)",
+    "items": [
+      "Recht: Nennung auf Stage- und Kommunikationsmassnahmen",
+      "Recht: Exklusive News von makerstage (aus der ganzen Welt zu greifbaren technologiegetriebenen Innovationen)",
+      "Recht: Gratis- und reduzierte Eintritte zur Stage (gemäss Status)",
+      "Pflicht: Kommunikation und Marketing über das eigene Netzwerk",
+      "Pflicht: Verbreitung von Aktionen über eigene Kanäle",
+      "Pflicht: Finanzielle Beteiligung CHF 1'000/a"
+    ]
   },
   {
-    name: 'Silber',
-    price: 'Partner:in',
-    items: [
-      'Recht: Alle Rechte der Silber Partner:in',
-      'Recht: Halbe A4-Seite Unternehmenswerbung in Publikationen',
-      'Recht: Nennung auf Stage- und Kommunikationsmassnahmen',
-      'Recht: Exklusive News von makerstage',
-      'Recht: Gratis- und reduzierte Eintritte zur Stage',
-      'Pflicht: Kommunikation und Marketing über das eigene Netzwerk',
-      'Pflicht: Verbreitung von Aktionen über eigene Kanäle',
-      'Pflicht: Finanzielle Beteiligung CHF 2500/a',
-    ],
+    "name": "SILBER",
+    "price": "Partner:in",
+    "items": [
+      "Recht: Alle Rechte und Pflichten der Bronze Partner:in (ausgenommen Finanzielle Beteiligung)",
+      "Recht: Exklusive Nennung auf Stage- und Kommunikationsmassnahmen",
+      "Recht: Halbe A4-Seite Unternehmenswerbung in Publikationen",
+      "Pflicht: Finanzielle Beteiligung CHF 2'500/a"
+    ]
   },
   {
-    name: 'Gold',
-    price: 'Partner:in',
-    featured: true,
-    items: [
-      'Alle Bronze-Rechte und -Pflichten',
-      'Ganze A4-Seite Unternehmenswerbung',
-      'Reduzierte und Gratistickets',
-      'Messestandplatz oder Messestand',
-    ],
+    "name": "GOLD",
+    "price": "Partner:in",
+    "featured": true,
+    "items": [
+      "Recht: Alle Rechte und Pflichten der Silber Partner:in (ausgenommen Finanzielle Beteiligung)",
+      "Recht: Ganze A4-Seite Unternehmenswerbung in Publikationen",
+      "Recht: Einfacher Präsentationsstand (Poster) und Stehtisch",
+      "Pflicht: Finanzielle Beteiligung CHF 5'000/a"
+    ]
   },
   {
-    name: 'Platin',
-    price: 'Partner:in',
-    featured: true,
-    items: [
-      'Alle Bronze-Rechte und -Pflichten',
-      'Zwei A4-Seiten Werbung oder Artikel',
-      'Marketingartikel auf der Stage verteilen',
-      '15 Minuten Präsentationsslot',
-      'Vorrecht auf Pilotierung von The Makers Projekten',
-    ],
+    "name": "PLATIN",
+    "price": "Partner:in",
+    "featured": true,
+    "items": [
+      "Recht: Alle Rechte und Pflichten der Gold Partner:in (ausgenommen Finanzielle Beteiligung)",
+      "Recht: Zwei A4-Seite Unternehmenswerbung in Publikationen oder Fachartikel zum Thema",
+      "Recht: Marketingartikel auf der Stage verteilen (nach Vorgaben)",
+      "Recht: 15 Minuten Präsentationsslot zu realen Innovationen resp. zum Thema im eigenen Branding",
+      "Recht: Vorrecht auf Pilotierung von The Makers Projekten",
+      "Pflicht: Finanzielle Beteiligung CHF 10'000/a"
+    ]
   },
   {
-    name: 'Rhodium',
-    price: 'Partnerin',
-    featured: true,
-    items: [
-      'Recht: Alle Plation-Rechte und -Pflichten',
-      'Recht: Vier A4-Seiten Werbung oder Artikel in der Stage Print',
-      'Recht: Beliebig Marketingartikel auf der Stage verteilen',
-      'Recht: 30 Minuten Präsentationsslot einer Innovation im eigenen Branding',
-      'Recht: Vorrecht auf Pilotierung von The Makers Projekten',
-      'Pflicht: CHF 20’000 / Jahr',
-    ],
-  },
+    "name": "RHODIUM",
+    "price": "Partnerin",
+    "featured": true,
+    "items": [
+      "Recht: Alle Rechte und Pflichten der PLATIN Partner:in (ausgenommen Finanzielle Beteiligung)",
+      "Recht: Vier A4-Seite Unternehmenswerbung in Publikationen oder Fachartikel zum Thema",
+      "Recht: Beliebig Marketingartikel auf der Stage verteilen",
+      "Recht: 30 Minuten Präsentationsslot realen Innovation resp. Zum Thema im eigenen Branding",
+      "Recht: Recht auf Pressauftritte mit makerstage Initianten für eigene Marketingzwecke",
+      "Pflicht: Finanzielle Beteiligung CHF 20'000/a"
+    ]
+  }
 ];
 
 const partners = [
@@ -248,10 +245,10 @@ export default function Page() {
               <div className="mini-panel save-date-info">
                 <p className="card-kicker save-date-kicker">FIRST STAGE · NEXT TO IMMO27</p>
                 <p>
-                  Zum Jahresauftakt erwartet euch in Zürich Oerlikon ein besonderer Tag: zwei Events an einem Standort - die IMMO27 in der Halle 550 und unsere erste Stage in der Halle 622.
+                  Zum Jahresauftakt 2027 erwartet euch in Zürich Oerlikon ein besonderer Tag: zwei Events an einem Standort - die IMMO27 in der Halle 550 und unsere erste Stage in der Halle 622.
                 </p>
                 <p>
-                  Mit der Stage führen wir den Spirit des IFMA-Spotlight 2026 weiter: einen kompakten, inspirierenden Rückblick mit relevanten Impulsen, Austausch und Begegnungen innerhalb der Branche findet ihr hier: <a href="https://www.youtube.com/watch?v=jSa3bXpuQhg&t=2s" target="_blank" rel="noreferrer">Rückblick</a>
+                  Mit der Stage führen wir den Spirit des IFMA-Spotlight 2026 weiter: einen kompakten, inspirierenden Rückblick mit relevanten Impulsen, Austausch und Begegnungen innerhalb der Branche findet ihr hier: <a href="https://www.youtube.com/watch?v=jSa3bXpuQhg&t=2s" className="accent-text external-review-link" target="_blank" rel="noreferrer" title="Rückblick öffnet in einem neuen Tab, damit diese Website geöffnet bleibt">Rückblick</a>
                 </p>
                 <p>
                   Ihr könnt euch bereits heute anmelden: <a href="#registration" className="accent-text">Anmeldung</a>
@@ -307,7 +304,7 @@ export default function Page() {
             </label>
             <label className="full">
               <span>Rechnungsadresse / Bemerkung</span>
-              <textarea name="message" rows="5" placeholder="Adresse für Rechnung, Partnerunternehmen oder weitere Hinweise" />
+              <textarea name="message" rows="5" placeholder="Adresse für Rechnungen oder weitere Bemerkungen" />
             </label>
             <button type="submit" className="button button-primary">Anmeldung senden</button>
           </form>

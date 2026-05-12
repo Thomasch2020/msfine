@@ -533,6 +533,9 @@ main::before {
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
+.save-date-info a.accent-text {
+  font-weight: 700;
+}
 .logo-grid {
   margin-top: 42px;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
